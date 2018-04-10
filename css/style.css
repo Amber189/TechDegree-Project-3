@@ -1,0 +1,110 @@
+/*----Base Style----*/
+*{
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+body {
+  font-family: 'IBM Plex Serif', serif;
+  /* display: flex; */
+
+}
+form{
+  display: block;
+  width: 90%;
+  padding: 0 10px;
+}
+h3{
+  margin-bottom: 0;
+}
+fieldset{
+  border:none;
+}
+.heading{
+  display:block;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  background-color: gray;
+  margin-top:0;
+  padding: 15px;
+}
+.container{
+width: 100%;
+
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px 20px;
+}
+
+.heading,
+.intro,
+.footer{
+  text-align: center;
+}
+.intro{
+  border-bottom: black solid 2px;
+}
+.form-1{
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+}
+input {
+    height: 2.5em; /* for IE */
+    vertical-align: middle; /* This is optional but it makes legacy IEs look better */
+    border-radius: 5px;
+    outline:none;
+}
+.flex-info,
+.flex-news{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+textarea{
+  display: block;
+  /* vertical-align: top; --- use as inline --- */
+}
+input:focus, textarea:focus {
+  /* background   : rgba(0,0,0,.1); */
+  border-radius: 5px;
+  border-color: blue;
+  outline: none;
+}
+/* section{
+  width: 70%;
+  margin: 0 auto;
+} */
+.footer{
+
+}
+
+/*-----------------
+Attribute Selectors
+-------------------
+[class] {
+  attribute:value;
+}
+input[type="submit"] {
+  background-color: green;
+}
+a[target="_blank"] {
+  color: tomato;
+}
+*/
+
+.flex-info,
+.flex-news{
+
+}
+
+/*----Media Queries----*/
+@media (min-width: 768px){
+
+
+
+}

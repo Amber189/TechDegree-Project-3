@@ -5,138 +5,171 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="#.css">
-    <link rel="stylesheet" href="#normalize.css">
-    <link href="#font-link" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700" rel="stylesheet">
   </head>
 
   <body>
 <!-- Define form. action= web address processes information subitted from form attribute=where and how to send data
 method= (HTTP method that the browser uses to submit the form.)"post" or "get"-->
-      <form action="index.html/my-handling-form-page" method="post">
-        <h1>The Code Review</h1>
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox
-        </p>
 
+    <h3 class="heading">The Code Review</h3>
+
+        <div class="container intro">
+          <h3>Signup for our newsletter</h3>
+          <p>Get the latest news on how your code is doing right in your inbox
+          </p>
+        </div>
+
+      <form action="index.html/my-handling-form-page" method="post">
         <fieldset>
-          <legend>Contact Information</legend>
-            <div>
-              <!-- for= id/link a label to a form widget-->
-              <label for="name">Full Name</label>
-              <!-- input is empty element.type= defines the way the <input> element behaves. <name>for specific data-->
-              <input type="text" id="name" name="user_name" placeholder="Required">
-            </div>
-            <div>
-              <label for="mail">Email Address</label>
-              <input type="email" id="mail" name="user_e-mail" placeholder="Required">
-            </div>
-            <div>
-              <label for="phone">Phone Number</label>
-              <!-- textarea need closing tag.for= id/link a label to a form widget-->
-              <input type="tel" id="phone" name="user_phone">
-            </div>
-            <div>
-              <label for="address">Street address</label>
-              <input type="text" id="adress" name="user_address">
-            </div>
-            <div>
-              <label for="city">City</label>
-              <input type="text" id="city" name="user_city">
-            </div>
-            <div>
-              <label for="state">State</label>
-              <select name="state" id="state">
-                <option value="placeholder">Choose State</option>
-                <option value="AK">AK</option>
-                <option value="AL">AL</option>
-                <option value="AR">AR</option>
-                <option value="AZ">AZ</option>
-                <option value="CA">CA</option>
-                <option value="CO">CO</option>
-                <option value="CT">CT</option>
-                <option value="DC">DC</option>
-                <option value="DE">DE</option>
-                <option value="FL">FL</option>
-                <option value="GA">GA</option>
-                <option value="HI">HI</option>
-                <option value="IA">IA</option>
-                <option value="ID">ID</option>
-                <option value="IL">IL</option>
-                <option value="IN">IN</option>
-                <option value="KS">KS</option>
-                <option value="KY">KY</option>
-                <option value="LA">LA</option>
-                <option value="MA">MA</option>
-                <option value="MD">MD</option>
-                <option value="ME">ME</option>
-                <option value="MI">MI</option>
-                <option value="MN">MN</option>
-                <option value="MO">MO</option>
-                <option value="MS">MS</option>
-                <option value="MT">MT</option>
-                <option value="NC">NC</option>
-                <option value="ND">ND</option>
-                <option value="NE">NE</option>
-                <option value="NH">NH</option>
-                <option value="NJ">NJ</option>
-                <option value="NM">NM</option>
-                <option value="NV">NV</option>
-                <option value="NY">NY</option>
-                <option value="OH">OH</option>
-                <option value="OK">OK</option>
-                <option value="OR">OR</option>
-                <option value="PA">PA</option>
-                <option value="RI">RI</option>
-                <option value="SC">SC</option>
-                <option value="SD">SD</option>
-                <option value="TN">TN</option>
-                <option value="TX">TX</option>
-                <option value="UT">UT</option>
-                <option value="VA">VA</option>
-                <option value="VT">VT</option>
-                <option value="WA">WA</option>
-                <option value="WI">WI</option>
-                <option value="WV">WV</option>
-                <option value="WY">WY</option>
-              </select>
-            </div>
-            <div>
-              <label for="zip">Zip Code</label>
-              <input type="text" id="zip" name="user_zipcode">
-            </div>
+          <div class="container form-1">
+            <legend>Contact Information</legend>
+              <section>
+                <div class="flex-info">
+                    <!-- for= id/link a label to a form widget-->
+                  <p>
+                    <label for="name">Full Name</label>
+                    <!-- input is empty element.type= defines the way the <input> element behaves. <name>for specific data-->
+                    <input type="text" id="name"  name="user_name" placeholder="Required">
+                    <!--placeholder syntax is non-standard-->
+                  </p>
+                <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_e-mail" placeholder="Required">
+                  </p>
+                  <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="phone">Phone Number</label>
+                    <!-- textarea need closing tag.for= id/link a label to a form widget-->
+                    <input type="tel" id="phone" name="user_phone">
+                  </p>
+                  <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="address">Street address</label>
+                    <input type="text" id="adress" name="user_address">
+                    </p>
+                  <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+                    </p>
+                  <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                      <option value="placeholder">Choose State</option>
+                      <option value="AK">AK</option>
+                      <option value="AL">AL</option>
+                      <option value="AR">AR</option>
+                      <option value="AZ">AZ</option>
+                      <option value="CA">CA</option>
+                      <option value="CO">CO</option>
+                      <option value="CT">CT</option>
+                      <option value="DC">DC</option>
+                      <option value="DE">DE</option>
+                      <option value="FL">FL</option>
+                      <option value="GA">GA</option>
+                      <option value="HI">HI</option>
+                      <option value="IA">IA</option>
+                      <option value="ID">ID</option>
+                      <option value="IL">IL</option>
+                      <option value="IN">IN</option>
+                      <option value="KS">KS</option>
+                      <option value="KY">KY</option>
+                      <option value="LA">LA</option>
+                      <option value="MA">MA</option>
+                      <option value="MD">MD</option>
+                      <option value="ME">ME</option>
+                      <option value="MI">MI</option>
+                      <option value="MN">MN</option>
+                      <option value="MO">MO</option>
+                      <option value="MS">MS</option>
+                      <option value="MT">MT</option>
+                      <option value="NC">NC</option>
+                      <option value="ND">ND</option>
+                      <option value="NE">NE</option>
+                      <option value="NH">NH</option>
+                      <option value="NJ">NJ</option>
+                      <option value="NM">NM</option>
+                      <option value="NV">NV</option>
+                      <option value="NY">NY</option>
+                      <option value="OH">OH</option>
+                      <option value="OK">OK</option>
+                      <option value="OR">OR</option>
+                      <option value="PA">PA</option>
+                      <option value="RI">RI</option>
+                      <option value="SC">SC</option>
+                      <option value="SD">SD</option>
+                      <option value="TN">TN</option>
+                      <option value="TX">TX</option>
+                      <option value="UT">UT</option>
+                      <option value="VA">VA</option>
+                      <option value="VT">VT</option>
+                      <option value="WA">WA</option>
+                      <option value="WI">WI</option>
+                      <option value="WV">WV</option>
+                      <option value="WY">WY</option>
+                    </select>
+                    </p>
+                  <!-- </div>
+                  <div> -->
+                  <p>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zipcode">
+                  </p>
+                </div> <!--</flex-infor> -->
+            </section>
+        </div> <!--</container> -->
       </fieldset>
       <fieldset>
-        <legend>Newsletter</legend>
-          <div>
-            <p>Select the newsletters you would like to receive</p>
-              <input type="checkbox" name="newsletter" value="HTML"> HTML News<br>
-              <input type="checkbox" name="newsletter" value="CSS"> CSS News<br>
-              <input type="checkbox" name="newsletter" value="Javascript"> Javascript News<br>
-
-            <p>Newsletter format</p>
-              <input type="radio" value="format"> HTML<br>
-              <input type="radio" value="format"> Plain text<br>
-
-            <p>Other options you would like to hear about</p>
-              <textarea id="text" name="user_phone"></textarea>
-          </div>
-        <div class="button">
-          <!-- type has 3 values: submit, reset or button-->
-          <button type="submit">Sign Up</button>
-        </div>
-        </fieldset>
-      </form>
-
-      <p>Copyright The Code Review</p>
-
+        <div class="container">
+          <legend>Newsletter</legend>
+            <section>
+              <div>
+                <p>Select the newsletters you would like to receive</p>
+                <!-- <div> -->
+                  <ul class="flex-news">
+                    <li>
+                      <input type="checkbox" name="newsletter" value="HTML"> HTML News<br>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="newsletter" value="CSS"> CSS News<br>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="newsletter" value="Javascript"> Javascript News<br>
+                    </li>
+                    </ul>
+                    <p>Newsletter format</p>
+                    <ul>
+                    <li>
+                      <input type="radio" value="format"> HTML<br>
+                    </li>
+                    <li>
+                      <input type="radio" value="format"> Plain text<br>
+                    </li>
+                </ul>
+                <p>Other options you would like to hear about</p>
+                <div>
+                  <textarea id="text" name="text"></textarea>
+                </div>
+              </div> <!--</flex-news> -->
+            </div>
+              <div class="button">
+                <!-- type has 3 values: submit, reset or button-->
+                <button type="submit">Sign Up</button>
+              </div>
+          </section>
+        </div> <!--/container-->
+      </fieldset>
+        <p class="footer">Copyright The Code Review</p>
+    </form>
   </body>
-</html>
-
-
-
-
-
-
-
 </html>
