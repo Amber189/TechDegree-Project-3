@@ -128,22 +128,22 @@
 
         <div class="container">
           <legend>Newsletter</legend>
-            <section>
+            <!-- <section> -->
               <div>
                 <p>Select the newsletters you would like to receive</p>
                 <div class="flex-news">
                   <ul> <!-- <ul> keeps checkbox and text on same line -->
                     <li>
-                      <input type="checkbox" id="zip"name="newsletter" value="HTML">
-                       <label for="city">HTML News</label>
+                      <input type="checkbox" id="newsletter"name="newsletter" value="HTML">
+                       <label for="city"> &ensp; HTML News</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="zip" name="newsletter" value="CSS">
-                      <label for="city">CSS News</label>
+                      <input type="checkbox" id="newsletter" name="newsletter" value="CSS">
+                      <label for="city"> &ensp; CSS News</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="zip" name="newsletter" value="Javascript">
-                      <label for="city">Javascript News</label>
+                      <input type="checkbox" id="newsletter" name="newsletter" value="Javascript">
+                      <label for="city"> &ensp; Javascript News</label>
                     </li>
                   </ul>
 
@@ -151,16 +151,16 @@
                     <ul>
                       <li>
                         <input type="radio" id="html" value="format">
-                        <label for="html"> HTML</label> <br>
+                        <label for="html"> &ensp; HTML</label> <br>
                       </li>
                       <li>
                         <label for="ptext"></label>
-                       <input type="radio" id="ptext" value="format"> Plain text<br> <!--trying things differently-->
+                       <input type="radio" id="ptext" value="format"> &ensp;  Plain text<br> <!--trying things differently-->
                       </li>
                     </ul>
 
 
-                  <label for="text">Other options you would like to hear about</label>
+                  <label for="text" id="other">Other topics you would like to hear about</label><br>
                   <textarea id="text" name="text"></textarea><br>
               </div> <!--</flex-news> -->
             </div>
@@ -168,10 +168,10 @@
                 <!-- type has 3 values: submit, reset or button-->
                 <button type="submit">Sign Up</button>
               </div>
-          </section>
+          <!-- </section> -->
         </div> <!--/container-->
       </fieldset>
-        <p class="footer">Copyright The Code Review</p>
+        <p class="footer"><i>Copyright The Code Review</i></p>
     </form>
   </body>
 </html>

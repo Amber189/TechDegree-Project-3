@@ -27,6 +27,8 @@ fieldset{
 section,
 p,
 ul,
+#state,
+#other,
 .footer{
   color: gray;
 }
@@ -42,6 +44,10 @@ ul,
   padding: 15px;
 }
 
+.flex-news ul,
+li{
+  display: block;
+}
 .container{
   width: 100%;
 }
@@ -83,6 +89,7 @@ legend{
 }
 
 
+
 /*-----------------
 Attribute Selectors
 -------------------*/
@@ -97,19 +104,48 @@ a[target="_blank"] {
 } */
 
 input:focus, textarea:focus {
-  /* background   : rgba(0,0,0,.1); */
+  background   : silver;
   border-radius: 5px;
   border-color: blue;
   outline: none;
 }
 
-input {
+input,
+#state {
     height: 2.5em; /* for IE */
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
     border-radius: 5px;
     outline:none;
     border:none;
-    background-color: silver;
+    background-color: rgba(0,0,0,.1);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: right;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: right;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
+}
+.form-1 label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-1 input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  resize  : none;
+  overflow: auto;
+}
+#zip{
+width: 50%;
 }
 
 textarea{
@@ -164,6 +200,28 @@ button:focus {
 /*----Media Queries----*/
 @media (min-width: 768px){
 
+form,
+.intro{
+  width: 50%;
+}
+.intro,
+form,
+fieldset{
+  padding-left: 0;
+  padding-right: 0;
+}
 
-
+.flex-info input,
+.flex-info label{
+  display: inline;
+  margin-right: 0;
+}
+.flex-info input{
+  width: 70%;
+  margin-left:auto;
+  margin-right:0;
+}
+.flex-info label{
+  width: 30%;
+}
 }
