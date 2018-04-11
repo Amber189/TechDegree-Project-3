@@ -211,17 +211,15 @@ fieldset{
   padding-right: 0;
 }
 
-.flex-info input,
-.flex-info label{
-  display: inline;
-  margin-right: 0;
-}
+
 .flex-info input{
+  display: inline;
   width: 70%;
-  margin-left:auto;
-  margin-right:0;
+  margin-left:0;
+  margin-right: 0:
 }
 .flex-info label{
   width: 30%;
+  margin-right: 0;
 }
 }
