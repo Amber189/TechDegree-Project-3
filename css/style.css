@@ -12,16 +12,17 @@ body {
 form
 /* .intro*/{
   display: block;
-  width: 90%;
+  width: 92.5%;
   padding: 10px;
-  margin: 5px auto;
-  border-top: black solid 2px;
+   margin: -5px auto;
+  /* border-top: black solid 2px; */
 }
 h3{
   margin-bottom: 0;
 }
 fieldset{
   border:none;
+  margin-top: 15px;
 }
 
 section,
@@ -39,28 +40,31 @@ ul,
   margin: 0 auto;
   color: white;
   text-transform: uppercase;
-  background-color: gray;
+  background-color: #2E3451;
   margin-top:0;
-  padding: 15px;
+  padding: 25px;
 }
 
 .flex-news ul,
 li{
   display: block;
 }
-.container{
+/* .container{
   width: 100%;
-}
+} */
 .intro{
   display: block;
   width: 90%;
-  padding: 0 10px;
-  margin: 0 auto;
+  padding: 10px 10px 20px;
+   margin: 0 auto;
   /* display: flex;
   flex-direction: column;
   padding: 0 35px 20px; */
 }
-
+.intro-p{
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .heading,
 .intro,
 .footer{
@@ -72,9 +76,6 @@ li{
   border-bottom: black solid 4px;
 }
 
-.form-1{
-  border-bottom: black solid 1px;
-}
 
 .flex-info,
 .flex-news{
@@ -88,7 +89,19 @@ legend{
   font-size: 1.125em;
 }
 
+#other,
+#text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.border-lines{
+  border-top: black solid 2px;
+  margin-top: 0;
+  padding: 10px 10px 0;
+  background-color: #F2F5F7;
+  border-bottom: black solid 1px;
+}
 
 /*-----------------
 Attribute Selectors
@@ -112,13 +125,15 @@ input,
     border-radius: 5px;
     outline:none;
     border:none;
-    background-color: rgba(0,0,0,.1);
+    background-color: #F4E6D6;
 }
 input:focus, textarea:focus {
-  background   : silver;
-  border: 2px solid blue;
+  background   : #ECC8BF;
+  border: 2px solid #5FA5A8;
   border-radius: 5px;
   outline: none;
+  transition: .3s ease-in;
+
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -133,6 +148,21 @@ input:focus, textarea:focus {
 :-moz-placeholder { /* Firefox 18- */
   text-align: right;
 }
+
+textarea[id="text"]::-webkit-input-placeholder  { /* Chrome/Opera/Safari */
+  text-align: left;
+}
+textarea[id="text"]::-moz-placeholder { /* Firefox 19+ */
+  text-align: left;
+}
+textarea[id="text"]:-ms-input-placeholder { /* IE 10+ */
+  text-align: left;
+}
+textarea[id="text"]:-moz-placeholder { /* Firefox 18- */
+  text-align: left;
+}
+
+
 .form-1 label{
   display: block;
   margin-bottom: 10px;
@@ -146,14 +176,14 @@ input:focus, textarea:focus {
   overflow: auto;
 }
 #zip{
-width: 50%;
+width: 40%;
 }
 
 textarea{
   display: block;
   outline:none;
   border:none;
-  background-color: silver;
+  background-color: #F4E6D6;
   border-radius: 5px;
   /* padding : 10px; */
   /* margin  : 10px 0; */
@@ -174,7 +204,7 @@ button {
   font-weight: bold;
   border       : none;
   border-radius: 5px;
-  background   : green;
+  background   : #5FA5A8;
 
   margin-top   : 25px;
   cursor       : pointer;
@@ -191,7 +221,7 @@ button {
 button:hover,
 button:focus {
   outline   : none;
-  background-color: teal;
+  background-color: #426472;
   color   : #FFF;
 }
 
@@ -211,11 +241,15 @@ fieldset{
 }
 .form-1 label{
   width: 30%;
+  margin-bottom: 0;
+  padding-top: 10px;
   padding-right: 5px;
+  height: 40px;
 }
  .form-1 input{
    /* display:inline; */
-   width: 65%;
+   width: 70%;
+   height: 40px;
 }
 .form-1 p{
   display: flex;

@@ -12,51 +12,46 @@
   <!-- Define form. action= web address processes information subitted from form attribute=where and how to send data
   method= (HTTP method that the browser uses to submit the form.)"post" or "get"-->
   <body>
+
     <header >
       <h3 class="heading">The Code Review</h3>
     </header>
 
-
-        <div class="container intro">
+        <div class="intro">
           <h3>Signup for our newsletter</h3>
-          <p>Get the latest news on how your code is doing right in your inbox</p>
+          <p class="intro-p">Get the latest news on how your code is doing right in your inbox</p>
         </div>
 
       <form action="index.html/my-handling-form-page" method="post">
-
+        <div class="border-lines">
         <fieldset>
-          <div class="container form-1">
-            <legend>Contact Information</legend>
+          <legend>Contact Information</legend>
 
-              <div class="flex-info">
+              <div class="flex-info container form-1">
                     <!-- for= id/link a label to a form widget-->
                   <p> <!-- instead of div <p> give styling and space bwtn -->
                     <label for="name">Full Name</label>
                     <!-- input is empty element.type= defines the way the <input> element behaves. <name>for specific data. Order matters (label then input)-->
-                    <input type="text" id="name"  name="user_name" placeholder="Required">
+                    <input required type="text" id="name"  name="user_name" placeholder="Required">
                     <!--placeholder syntax is non-standard-->
                   </p>
                   <p>
                     <label for="mail">Email Address</label>
-                    <input type="email" id="mail" name="user_e-mail" placeholder="Required">
+                    <input required type="email" id="mail" name="user_e-mail" placeholder="Required">
                   </p>
-
                   <p>
                     <label for="phone">Phone Number</label>
                     <!-- textarea need closing tag.for= id/link a label to a form widget-->
-                    <input type="tel" id="phone" name="user_phone">
+                    <input type="tel" id="phone" name="user_phone" placeholder="(XXX)XXX-XXXX">
                   </p>
-
                   <p>
                     <label for="address">Street address</label>
                     <input type="text" id="address" name="user_address">
                   </p>
-
                   <p>
                     <label for="city">City</label>
                     <input type="text" id="city" name="user_city">
                   </p>
-
                   <p>
                     <label for="state">State</label>
                     <select name="state" id="state">
@@ -114,36 +109,33 @@
                       <option value="WY">WY</option>
                     </select>
                   </p>
-
                   <p>
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zipcode">
                   </p>
 
-            </div><!--</flex-info> -->
-        </div> <!--</container> -->
+              </div><!--</flex-info> -->
+
       </fieldset>
-
+    </div><!--</border-lines> -->
       <fieldset>
+        <legend>Newsletter</legend>
 
-        <div class="container">
-          <legend>Newsletter</legend>
-            <!-- <section> -->
-              <div>
-                <p>Select the newsletters you would like to receive</p>
+          <div class="container">
+              <p>Select the newsletters you would like to receive</p>
                 <div class="flex-news">
                   <ul> <!-- <ul> keeps checkbox and text on same line -->
                     <li>
                       <input type="checkbox" id="html" name="newsletter" value="HTML">
-                       <label for="city"> &ensp; HTML News</label>
+                       <label for="html"> &ensp; HTML News</label>
                     </li>
                     <li>
                       <input type="checkbox" id="css" name="newsletter" value="CSS">
-                      <label for="city"> &ensp; CSS News</label>
+                      <label for="css"> &ensp; CSS News</label>
                     </li>
                     <li>
                       <input type="checkbox" id="js" name="newsletter" value="Javascript">
-                      <label for="city"> &ensp; Javascript News</label>
+                      <label for="js"> &ensp; Javascript News</label>
                     </li>
                   </ul>
 
@@ -151,7 +143,7 @@
                     <ul>
                       <li>
                         <input type="radio" id="r-html" name="format" value="format">
-                        <label for="html"> &ensp; HTML</label> <br>
+                        <label for="r-html"> &ensp; HTML</label> <br>
                       </li>
                       <li>
                         <label for="ptext"></label>
@@ -159,18 +151,17 @@
                       </li>
                     </ul>
 
-
-                  <label for="text" id="other">Other topics you would like to hear about</label><br>
-                  <textarea id="text" name="text"></textarea><br>
+                  <label for="text" id="other">Other topics you would like to hear about</label>
+                  <textarea id="text" name="text" placeholder="We would love to hear from you!"></textarea>
               </div> <!--</flex-news> -->
-            </div>
+
               <div class="button">
                 <!-- type has 3 values: submit, reset or button-->
                 <button type="submit">Sign Up</button>
               </div>
-          <!-- </section> -->
         </div> <!--/container-->
       </fieldset>
+
         <p class="footer"><i>Copyright The Code Review</i></p>
     </form>
   </body>
