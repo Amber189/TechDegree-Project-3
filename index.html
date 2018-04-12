@@ -4,7 +4,7 @@
     <!--The head tells us what the document is about, links the css stylesheet, viewport tag gives the browser instructions on how to control the page's dimensions and scaling and a link to establishe a font for the site-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Online Registration Form</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700" rel="stylesheet">
@@ -14,9 +14,9 @@
   <body>
     <header >
       <h3 class="heading">The Code Review</h3>
-    <header>
+    </header>
 
-    <main>
+
         <div class="container intro">
           <h3>Signup for our newsletter</h3>
           <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -28,7 +28,7 @@
           <div class="container form-1">
             <legend>Contact Information</legend>
 
-              <section class="flex-info">
+              <div class="flex-info">
                     <!-- for= id/link a label to a form widget-->
                   <p> <!-- instead of div <p> give styling and space bwtn -->
                     <label for="name">Full Name</label>
@@ -49,7 +49,7 @@
 
                   <p>
                     <label for="address">Street address</label>
-                    <input type="text" id="adress" name="user_address">
+                    <input type="text" id="address" name="user_address">
                   </p>
 
                   <p>
@@ -120,7 +120,7 @@
                     <input type="text" id="zip" name="user_zipcode">
                   </p>
 
-            </section><!--</flex-info> -->
+            </div><!--</flex-info> -->
         </div> <!--</container> -->
       </fieldset>
 
@@ -134,15 +134,15 @@
                 <div class="flex-news">
                   <ul> <!-- <ul> keeps checkbox and text on same line -->
                     <li>
-                      <input type="checkbox" id="newsletter"name="newsletter" value="HTML">
+                      <input type="checkbox" id="html" name="newsletter" value="HTML">
                        <label for="city"> &ensp; HTML News</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="newsletter" name="newsletter" value="CSS">
+                      <input type="checkbox" id="css" name="newsletter" value="CSS">
                       <label for="city"> &ensp; CSS News</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="newsletter" name="newsletter" value="Javascript">
+                      <input type="checkbox" id="js" name="newsletter" value="Javascript">
                       <label for="city"> &ensp; Javascript News</label>
                     </li>
                   </ul>
@@ -150,12 +150,12 @@
                   <p>Newsletter format</p>
                     <ul>
                       <li>
-                        <input type="radio" id="html" value="format">
+                        <input type="radio" id="r-html" name="format" value="format">
                         <label for="html"> &ensp; HTML</label> <br>
                       </li>
                       <li>
                         <label for="ptext"></label>
-                       <input type="radio" id="ptext" value="format"> &ensp;  Plain text<br> <!--trying things differently-->
+                       <input type="radio" id="ptext" name="format" value="format"> &ensp;  Plain text<br> <!--trying things differently-->
                       </li>
                     </ul>
 

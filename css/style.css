@@ -103,12 +103,7 @@ a[target="_blank"] {
   color: tomato;
 } */
 
-input:focus, textarea:focus {
-  background   : silver;
-  border-radius: 5px;
-  border-color: blue;
-  outline: none;
-}
+
 
 input,
 #state {
@@ -118,6 +113,12 @@ input,
     outline:none;
     border:none;
     background-color: rgba(0,0,0,.1);
+}
+input:focus, textarea:focus {
+  background   : silver;
+  border: 2px solid blue;
+  border-radius: 5px;
+  outline: none;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -185,14 +186,12 @@ button {
         transform: rotate(-1.5deg); */
 }
 
-/* button:after {
-  content: " >>>";
-} */
+
 
 button:hover,
 button:focus {
   outline   : none;
-  background: teal;
+  background-color: teal;
   color   : #FFF;
 }
 
@@ -210,16 +209,19 @@ fieldset{
   padding-left: 0;
   padding-right: 0;
 }
-
-
-.flex-info input{
-  display: inline;
-  width: 70%;
-  margin-left:0;
-  margin-right: 0:
-}
-.flex-info label{
+.form-1 label{
   width: 30%;
-  margin-right: 0;
+  padding-right: 5px;
 }
+ .form-1 input{
+   /* display:inline; */
+   width: 65%;
+}
+.form-1 p{
+  display: flex;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+}
+
+
 }
