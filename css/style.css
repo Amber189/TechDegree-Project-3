@@ -49,22 +49,19 @@ ul,
 li{
   display: block;
 }
-/* .container{
-  width: 100%;
-} */
+
 .intro{
   display: block;
   width: 90%;
   padding: 10px 10px 20px;
    margin: 0 auto;
-  /* display: flex;
-  flex-direction: column;
-  padding: 0 35px 20px; */
+
 }
 .intro-p{
   margin-left: 15px;
   margin-right: 15px;
 }
+
 .heading,
 .intro,
 .footer{
@@ -72,10 +69,8 @@ li{
 }
 
 .intro{
-  /* width: 80%; */
   border-bottom: black solid 4px;
 }
-
 
 .flex-info,
 .flex-news{
@@ -127,6 +122,8 @@ input,
     border:none;
     background-color: #F4E6D6;
 }
+
+
 input:focus, textarea:focus {
   background   : #ECC8BF;
   border: 2px solid #5FA5A8;
@@ -168,7 +165,8 @@ textarea[id="text"]:-moz-placeholder { /* Firefox 18- */
   margin-bottom: 10px;
 }
 
-.form-1 input{
+.form-1 input,
+select{
   display: block;
   height: 50px;
   width: 100%;
@@ -209,14 +207,7 @@ button {
   margin-top   : 25px;
   cursor       : pointer;
 
-/* -webkit-transform: rotate(-1.5deg);
-   -moz-transform: rotate(-1.5deg);
-    -ms-transform: rotate(-1.5deg);
-     -o-transform: rotate(-1.5deg);
-        transform: rotate(-1.5deg); */
 }
-
-
 
 button:hover,
 button:focus {
@@ -246,8 +237,8 @@ fieldset{
   padding-right: 5px;
   height: 40px;
 }
- .form-1 input{
-   /* display:inline; */
+ .form-1 input,
+ select{
    width: 70%;
    height: 40px;
 }
